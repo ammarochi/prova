@@ -9,13 +9,13 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/produto")]
+    [Route("api/automovel")]
 
-    public class ProdutoController : ControllerBase
+    public class AutomovelController : ControllerBase
     {
         private readonly DataContext _context;
 
-        public ProdutoController(DataContext context)
+        public AutomovelController(DataContext context)
         {
             _context = context;
         }
@@ -23,15 +23,15 @@ namespace API.Controllers
         [HttpPost]
         [Route("Create")]
 
-        public async Task<IActionResult> Create(Produto produto)
+        public async Task<IActionResult> Create(Automovel automovel)
         {
-            await _context.Produtos.AddAsync(produto);
+            await _context.Automoveis.AddAsync(automovel);
             _context.SaveChanges();
-            return Created("", produto);
+            return Created("", automovel);
         }
 
         [HttpGet]
         [Route("list")]
-        public async Task<IActionResult> List() => Ok(await _context.Produtos.ToListAsync());
+        public async Task<IActionResult> List() => Ok(await _context.Automoveis.ToListAsync());
     }
 }
