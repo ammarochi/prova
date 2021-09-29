@@ -12,7 +12,7 @@ namespace API.Models
         public string Placa { get; set; }
         public string Proprietario { get; set; }
         public string Cor { get; set; }
-        public string CpfProprietario { get; set; }
+        public string Cpfproprietario { get; set; }
         public DateTime CriadoEm { get; set; }
     }
 }
