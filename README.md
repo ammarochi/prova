@@ -1,3 +1,18 @@
-Todos os elementos abaixo irão descrever os passos para a utilização do projeto da API (C#) e do FRONT (Angular)
+# Cadastro de automóveis
 
-API: SDK .NET 5.0; dotnet restore; dotnet watch run; FRONT: npm install; ng serve --open;
+Projeto realizado para obtenção da nota bimestral da disciplina de Desenvolvimento de Software Visual.
+
+WebAPI em C# com Entity Framework in Memory de cadastro e listagem de automóveis e frontend em AngularJs.
+
+## Instalação
+
+API:
+```bash
+dotnet restore
+dotnet watch run
+```
+Front:
+```bash
+npm install
+ng serve --open
+```
